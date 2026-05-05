@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Battleship</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Battleship</h1>
+
+Room: <input id="room" value="game1">
+<button onclick="join()">Join</button>
+
+<h3 id="status"></h3>
+
+<div>
+  <h2>Your Board</h2>
+  <div id="myBoard" class="grid"></div>
+</div>
+
+<div>
+  <h2>Enemy Board</h2>
+  <div id="enemyBoard" class="grid"></div>
+</div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
